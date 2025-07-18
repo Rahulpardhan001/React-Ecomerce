@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "image": "/images/headphones.jpg",
+      "price": 1499
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "image": "/images/watch.jpg",
+      "price": 2999
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "image": "/images/speaker.jpg",
+      "price": 1999
+    },
+    {
+      "id": 4,
+      "name": "Gaming Mouse",
+      "image": "/images/mouse.jpg",
+      "price": 899
+    },
+    {
+      "id": 5,
+      "name": "Mechanical Keyboard",
+      "image": "/images/keyboard.jpg",
+      "price": 2199
+    }
+  ]
+  
