@@ -8,12 +8,13 @@ const Navbar = () => {
   const [user, setUser] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
+  const isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     setUser(storedUser);
   }, []);
-
+  
   const handleLogout = () => {
     localStorage.setItem('isLoggedIn', false);
     setUser(null);
@@ -35,7 +36,7 @@ const Navbar = () => {
           <li><Link to="/about">About</Link></li>
 
           {/*  Profile Dropdown if Logged In */}
-          {user ? (
+          {user && isLoggedIn == true ? (
             <li className="relative">
               <button
                 onClick={toggleDropdown}
